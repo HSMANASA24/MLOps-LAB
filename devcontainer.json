@@ -1,0 +1,28 @@
+{
+    "name": "MLOps Student Lab",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        "--privileged",
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylint",
+                "ms-azuretools.vscode-docker",
+                "lakefs.lakefs-dvc",
+                "GitHub.vscode-pull-request-github"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "forwardPorts": [
+        5000
+    ]
+}
